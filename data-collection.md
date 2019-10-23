@@ -1,8 +1,12 @@
 # Data Collection
 ### DataSource
 All the data for this project is available in Kaggle. 
+
 Its consists of images and csv files.
-The data is first downloaded using kaggle-api into the local system. Unzipped and then transfered to Google DataStore bucket for further operations.
+
+The data is first downloaded using kaggle-api into the local system. 
+
+It was unzipped and then transfered to Google DataStore bucket for further operations.
 
 
 **train.csv** - Train data. 
