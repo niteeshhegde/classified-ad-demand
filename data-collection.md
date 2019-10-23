@@ -83,3 +83,5 @@ After unzipping all the files, total size of the dataset is about 100 GigaBytes.
 **train.csv** 1 GB
 
 **train_active.csv** 9.2 GB
+
+**Images** 60 GB
