@@ -32,6 +32,7 @@ After unzipping all the files, total size of the dataset is about 100 GigaBytes.
 **Images Test** 20 GB
 
 **Images Train** 50 GB
+
 ###Dataset
 
 **train.csv** - Train data with the following columns. 
