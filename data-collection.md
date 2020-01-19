@@ -13,25 +13,21 @@ Data from Kaggle was tranferred to Google DataStore Bucket by the following step
 Repeat steps 4,5 and 6 for all the files.
 
 The complete data tranfer took around 16 hours.
+
 ### Data Size
 
 After unzipping all the files, total size of the dataset is about 100 GigaBytes.
 
-**periods_test.csv** 632 MB
+| File | Size  |
+| :---:   | :-: |
+| **periods_train.csv** | 776 MB |
+| **test.csv** | 331 MB |
+| **test_active.csv** | 8.5 GB |
+| **train.csv** | 1 GB |
+| **train_active.csv** |  9.2 GB |
+| **Images Test** | 20 GB |
+| **Images Train** | 50 GB |
 
-**periods_train.csv** 776 MB
-
-**test.csv** 331 MB
-
-**test_active.csv** 8.5 GB
-
-**train.csv** 1 GB
-
-**train_active.csv** 9.2 GB
-
-**Images Test** 20 GB
-
-**Images Train** 50 GB
 
 ### Dataset
 
@@ -96,6 +92,7 @@ date_to - Last day the ad was displayed.
 **test_jpg.zip** - Images from the ads in test.csv.
 
 **train_jpg_{0, 1, 2, 3, 4}.zip** - These are the exact same images as you'll find in train_jpg.zip but split into smaller zip archives so the data are easier to download. If you already have train_jpg.zip you do NOT need to download these. We have not made these zips available in kernels as they would only increase the kernel creation time.
+
 
 
 
