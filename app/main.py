@@ -1,6 +1,6 @@
 import constants
 
-from flask import Flask, request, jsonify, make_response
+from flask import Flask, request, jsonify, make_response, render_template
 import re
 import pickle
 import numpy as np
@@ -90,7 +90,7 @@ def process_request(req):
 
 @app.route('/')
 def hello():
-    return 'Hello User!'
+    return render_template('index.html')
 
 
 @app.route('/api/predict', methods=['POST'])
