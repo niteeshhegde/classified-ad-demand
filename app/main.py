@@ -39,13 +39,16 @@ def process_request(req):
     x = np.zeros(82)
 
     region_en = "region_en_" + req.get("region_en")
-    x[constants.columns.index(region_en)] = 1
+    if region_en in constants.columns:
+        x[constants.columns.index(region_en)] = 1
 
     category_name_en = "category_name_en_" + req.get("category_name_en")
-    x[constants.columns.index(category_name_en)] = 1
+    if category_name_en in constants.columns:
+        x[constants.columns.index(category_name_en)] = 1
 
     user_type = "user_type_" + req.get("user_type")
-    x[constants.columns.index(user_type)] = 1
+    if user_type in constants.columns:
+        x[constants.columns.index(user_type)] = 1
 
     x_desc = clean_text(req.get("description"), stopWords)
     x_desc = tokenize_text([x_desc], tokenizer_desc, 50)
