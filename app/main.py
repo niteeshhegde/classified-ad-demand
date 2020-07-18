@@ -95,10 +95,10 @@ def hello():
 
 @app.route('/api/predict', methods=['POST'])
 def calc_class():
-    if(request.content_type == 'application/x-www-form-urlencoded'):
-        req = request.values
-    elif(request.content_type == 'application/json'):
+    if(request.content_type == 'application/json'):
         req = request.json
+    else:
+        req = request.values
     x_title, x_desc, x_data = process_request(req)
 
     data = json.dumps({

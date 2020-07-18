@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <style>
   body {
     font: 400 15px Lato, sans-serif;
@@ -189,60 +190,50 @@
     }
   }
 
+
     </style>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#about">ABOUT</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
+<body id="myPage" data-spy="scroll">
 <div class="jumbotron">
     <div class="text-center">
         <h1>Ad Demand Prediction</h1>
         <p>Check the demand for your ad here</p>
-        <hr />
+        <hr/>
     </div>
-    <form class="form-horizontal" method="post" action="/api/predict">
+    <form class="form-horizontal" id="myForm" method="post" action="/api/predict">
         <div class="form-group">
             <label class="control-label col-sm-2" for="region_en">Region (Oblast):</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name="region_en" id="region_en" placeholder="Enter Region" value="Voronezh oblast">
+                <input type="text" class="form-control" name="region_en" id="region_en" placeholder="Enter Region"
+                       value="Voronezh oblast">
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-sm-2" for="category_name_en">Category:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name="category_name_en" id="category_name_en" placeholder="Enter Category" value="Aquarium">
+                <input type="text" class="form-control" name="category_name_en" id="category_name_en"
+                       placeholder="Enter Category" value="Aquarium">
             </div>
         </div>
-         <div class="form-group">
+        <div class="form-group">
             <label class="control-label col-sm-2" for="parent_category_name_en">Parent Category:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name="parent_category_name_en" id="parent_category_name_en" placeholder="Enter Parent Category" value="McMillan">
+                <input type="text" class="form-control" name="parent_category_name_en" id="parent_category_name_en"
+                       placeholder="Enter Parent Category" value="McMillan">
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-sm-2" for="user_type">User Type:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name="user_type" id="user_type" placeholder="Enter User Type" value="Shop">
+                <input type="text" class="form-control" name="user_type" id="user_type" placeholder="Enter User Type"
+                       value="Shop">
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-sm-2" for="weekend">Day of the week:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name="weekend" id="weekend" placeholder="Enter day of the week" value="Sunday">
+                <input type="text" class="form-control" name="weekend" id="weekend" placeholder="Enter day of the week"
+                       value="Sunday">
             </div>
         </div>
         <div class="form-group">
@@ -254,48 +245,65 @@
         <div class="form-group">
             <label class="control-label col-sm-2" for="description">Description:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name="description" id="description" placeholder="Enter description" value="Кокон для сна малыша,пользовались 34534 435        safd">
+                <input type="text" class="form-control" name="description" id="description"
+                       placeholder="Enter description" value="Кокон для сна малыша,пользовались 34534 435        safd">
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-sm-2" for="title">Title:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name="title" id="title" placeholder="Enter title" value="Стойка для Одежды">
+                <input type="text" class="form-control" name="title" id="title" placeholder="Enter title"
+                       value="Стойка для Одежды">
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-sm-2" for="param_1">Param 1:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name="param_1" id="param_1" placeholder="Enter param_1" value="A nice little aquarium">
+                <input type="text" class="form-control" name="param_1" id="param_1" placeholder="Enter param_1"
+                       value="A nice little aquarium">
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-sm-2" for="param_2">Param 2:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name="param_2" id="param_2" placeholder="Enter param_2" value="Red Aqua">
+                <input type="text" class="form-control" name="param_2" id="param_2" placeholder="Enter param_2"
+                       value="Red Aqua">
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-sm-2" for="param_3">Param 3:</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name="param_3" id="param_3" placeholder="Enter param_3" value="Кокон">
+                <input type="text" class="form-control" name="param_3" id="param_3" placeholder="Enter param_3"
+                       value="Кокон">
             </div>
         </div>
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="submit" id="mySubmit" class="btn btn-default">Submit</button>
             </div>
         </div>
     </form>
 </div>
 
-<footer class="container-fluid text-center">
-    <a href="#myPage" title="To Top">
-        <span class="glyphicon glyphicon-chevron-up"></span>
-    </a>
-    <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
-</footer>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
 
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="text-primary" id="predicted"></h3>
+            </div>
+            <div class="modal-body">
+                <h4 id="good" class="text-success"></h4>
+                <h4 id="okay" class="text-warning"></h4>
+                <h4 id="poor" class="text-danger"></h4>
+            </div>
+        </div>
+
+    </div>
+</div>
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
@@ -331,6 +339,46 @@ $(document).ready(function(){
     });
   });
 })
+window.addEventListener( "load", function () {
+  function sendData() {
+    const XHR = new XMLHttpRequest();
+
+    // Bind the FormData object and the form element
+    const FD = new FormData( form );
+
+    // Define what happens on successful data submission
+    XHR.addEventListener( "load", function(event) {
+      response = event.target.responseText;
+      jsonResponse = JSON.parse(response)
+      $("#predicted")[0].innerHTML = "Predicted Class : " + jsonResponse["prediction"];
+      $("#good")[0].innerHTML = "Good : " + jsonResponse["categories"]["Good"];
+      $("#okay")[0].innerHTML = "Okay : " + jsonResponse["categories"]["Okay"];
+      $("#poor")[0].innerHTML = "Poor : " + jsonResponse["categories"]["Poor"];
+      $("#myModal").modal();
+    } );
+
+    // Define what happens in case of error
+    XHR.addEventListener( "error", function( event ) {
+      alert( 'Oops! Something went wrong.' );
+    } );
+
+    // Set up our request
+    XHR.open( "POST", "/api/predict" );
+
+    // The data sent is what the user provided in the form
+    XHR.send( FD );
+  }
+
+  // Access the form element...
+  const form = document.getElementById( "myForm" );
+
+  // ...and take over its submit event.
+  form.addEventListener( "submit", function ( event ) {
+    event.preventDefault();
+
+    sendData();
+  } );
+} );
 
 </script>
 
