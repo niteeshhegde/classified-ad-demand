@@ -118,6 +118,7 @@ def calc_class():
     result = json.loads(response.text)
     prediction = np.squeeze(result['predictions'][0])
     result = prediction.tolist()
+    print("Request : ", req, " Response : ", result)
     ad_classes = ["Good", "Okay", "Poor"]
     prediction_class = ad_classes[result.index(max(result))]
     return jsonify({
