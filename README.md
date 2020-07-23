@@ -24,3 +24,12 @@ A complete report on the solution
 
 **Computational Resources**
 	Google’s Colaboratory (Co-lab) having a Jupyter environment will be used for the project as it has 13 GB of RAM and provides CPU and GPUs. It also has 350 GB of disk space. The data used for the project is at max 300 GB and thus, co-lab should be sufficient.
+
+**Application in Production**
+    The AdDemand Application is avaiable [here](https://tensorflow-283115.wl.r.appspot.com/).
+    
+Prediction From UI: 
+![App UI](architecture/App-UI.png)
+
+Prediction Response:
+![App UI](architecture/App-Predict-UI.png)
