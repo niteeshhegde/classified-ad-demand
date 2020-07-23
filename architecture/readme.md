@@ -13,6 +13,7 @@ Here is an overview of the components used from data pre-process to deployment:
 
 ### Sequence Diagram 
 Here is the sequence diagram for the application:
+
 ![sequence-diagram](sequence-diagram.png)
 
 1. Client loads the AdDemand application hosted on https://tensorflow-283115.wl.r.appspot.com/
