@@ -6,7 +6,7 @@ Even with an optimized product listing, demand for a product may simply not exis
 
 
 **Dataset**
-	Avito is Russia’s largest classified advertisements website. The dataset for this problem statement is available in Kaggle as a part of this competition put up by Avito (https://www.kaggle.com/c/avito-demand-prediction/data). The compressed version entire dataset which comprising csv files, images of test and train data is 123 GB. Uncompressed version would be around 250 to 300 GB. The data can be acquired by using Kaggle API.
+	Avito is Russia’s largest classified advertisements website. The dataset for this problem statement is available in Kaggle as a part of this competition put up by [Avito](https://www.kaggle.com/c/avito-demand-prediction/data). The compressed version entire dataset which comprising csv files, images of test and train data is 123 GB. Uncompressed version would be around 250 to 300 GB. The data can be acquired by using Kaggle API.
 
 **Approach**
 	Advertisements are being rated on a scale from poor to excellent (poor, below average, average, above average and excellent). There shall be classification of these ads based on demand. 
