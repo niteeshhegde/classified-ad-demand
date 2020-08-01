@@ -35,8 +35,8 @@ A complete report on the solution
 **Application in Production :**
 The AdDemand Application is avaiable [here](https://tensorflow-283115.wl.r.appspot.com/).
      
-Prediction From UI: 
+__Prediction From UI:__
 ![App UI](architecture/App-UI.png)
 
-Prediction Response:
+__Prediction Response:__
 ![App UI](architecture/App-Predict-UI.png)
