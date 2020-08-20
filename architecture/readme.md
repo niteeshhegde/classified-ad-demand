@@ -1,9 +1,9 @@
 ## AdDemand Application
 ### Google Cloud Platform
-Here is an overview of the components used from data pre-process to deployment:
+Here is an overview of the services used from data pre-process to deployment:
 ![GCP](GCP.png)
 
-**DataProc :** This component was used in data pre-processing and for developing ML models on Apache Spark for the large CSV files. More details are in [spark data-preprocessing notebook](https://github.com/niteeshhegde/classified-ad-demand/blob/master/data-preprocessing/dataprep-pyspark.ipynb) and [pyspark models](https://github.com/niteeshhegde/classified-ad-demand/tree/master/notebooks/spark)
+**DataProc :** This service was used in data pre-processing and for developing ML models on Apache Spark for the large CSV files. More details are in [spark data-preprocessing notebook](https://github.com/niteeshhegde/classified-ad-demand/blob/master/data-preprocessing/dataprep-pyspark.ipynb) and [pyspark models](https://github.com/niteeshhegde/classified-ad-demand/tree/master/notebooks/spark)
 
 **Cloud Storage Bucket :** The entire dataset consisting of CSV files and Images are stored here. There are jupyter notebooks for each stage from pre-processing to deep learning. The processed data in separate CSV files are also stored. It also has pickle files from StandardScalar, tokenizer, ml model, etc. The Russian word vectors are also stored here. The final tensorflow model artifact in saved model format is also present here.
 
