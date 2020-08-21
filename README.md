@@ -1,6 +1,6 @@
 # Rating Classified Advertisements 
 
-**Problem Statement :**
+
 Classified advertising is the most common form of advertisement in newspapers, online websites and other periodicals. Classified advertisements are much cheaper than larger display advertisements and thus the need for it is always there. When the space for these ads is limited, a combination of tiny, nuanced details in a product description can make a big difference in drumming up interest.
 Even with an optimized product listing, demand for a product may simply not exist–frustrating sellers who may have over-invested in marketing. Thus, there is a need to predict the demand for an item that the seller is advertising based on the market and also title, description, images, geo-location, etc. Rating these advertisements based on the demand predicted could help the sellers analyse and optimise the ads. Better the ratings, better is the probability that the item will be sold. It also helps the publishers rank these ads based on ratings and geo-location. 
 
